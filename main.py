@@ -34,3 +34,15 @@ plt.ylabel("Number of School")
 for i,values in enumerate(school_by_type):
     plt.text(i,values+(0.01*values),str(values),ha="center",fontsize=8)
 plt.show()
+
+# Histogram of funding_per_student_usd
+data = df['funding_per_student_usd']
+counts, bins, _ = plt.hist(data, bins='auto', color='green', edgecolor='black')
+for i in range(len(counts)):
+    plt.text(bins[i] + (bins[i+1]-bins[i])/2, counts[i], int(counts[i]),
+             ha='center', va='bottom')
+
+plt.title("Histogram of Funding per Student")
+plt.xlabel("Funding per Student (USD)")
+plt.ylabel("Number of Schools")
+plt.show()
