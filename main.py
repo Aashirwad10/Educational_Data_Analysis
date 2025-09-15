@@ -46,3 +46,14 @@ plt.title("Histogram of Funding per Student")
 plt.xlabel("Funding per Student (USD)")
 plt.ylabel("Number of Schools")
 plt.show()
+
+# Histogram of avg_test_score_percent
+data = df['avg_test_score_percent']
+counts, bins, _= plt.hist(data,bins='auto',color='green',edgecolor='black')
+for i in range(len(counts)):
+    plt.text(bins[i] + (bins[i+1]-bins[i])/2, counts[i], int(counts[i]),ha='center', va='bottom')
+
+plt.title("Histogram of Average test score percent")
+plt.xlabel("Average Test Score (%)")
+plt.ylabel("Number of Schools")
+plt.show()
