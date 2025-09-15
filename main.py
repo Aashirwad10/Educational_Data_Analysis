@@ -21,3 +21,16 @@ print(school_by_type)
 
 school_by_level = df['grade_level'].value_counts() # for grade level
 print(school_by_level)
+
+# C. Basic Visual
+# Bar graph of schools by type
+school_by_type = df['school_type'].value_counts()
+plt.figure(figsize=(8,5))
+school_by_type.plot(kind="bar",color="green")
+plt.title("Bar graph of school by type")
+plt.xlabel("School Type")
+plt.xticks(rotation=55)
+plt.ylabel("Number of School")
+for i,values in enumerate(school_by_type):
+    plt.text(i,values+(0.01*values),str(values),ha="center",fontsize=8)
+plt.show()
