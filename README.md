@@ -19,7 +19,7 @@ Original author: Shamim Hasan
 - 🔼 *It gives min,max,mean....*
 - `df.describe()`
 
-![Checking Missing values](images/isnull.png)
+![Checking Missing values](images/missingvalue.png)
 - 🔼 *Checks if we have any missing values*
 - `df.isnull().sum()`
 
