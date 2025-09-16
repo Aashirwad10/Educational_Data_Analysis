@@ -28,7 +28,7 @@ Original author: Shamim Hasan
 - `df.duplicated().sum()`
 ---
 
-## A. Data Quality Check
+## B. Basic Summaries
 ### Preview (Screenshot)
 
 ![School by state](images/school_by_state.png)
@@ -46,15 +46,15 @@ Original author: Shamim Hasan
 
 ## C. Basic Visual
 ### Preview (Screenshot)
-![Bar graph of schools by type](images/school_by_state.png)
+![Bar graph of schools by type](images/school_by_type_plot.png)
 - 🔼 *Bar Graph on schools by type*
 - `school_by_type`
 
-![Histogram of funding_per_student_usd](images/school_by_type.png)
+![Histogram of funding_per_student_usd](images/funding_per_student_usd_plot.png)
 - 🔼 *Histogram of funding per student (in usd)*
 - `funding_per_student_usd`
 
-![Histogram of avg_test_score_percent](images/school_by_level.png)
+![Histogram of avg_test_score_percent](images/avg_test_score_percent_plot.png)
 - 🔼 *Histogram of average test score percent*
 - `avg_test_score_percent`
 ---
