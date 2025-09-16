@@ -43,3 +43,18 @@ Original author: Shamim Hasan
 - 🔼 *It gives us info on level of school*
 - `school_by_level`
 ---
+
+## C. Basic Visual
+### Preview (Screenshot)
+![Bar graph of schools by type](images/school_by_state.png)
+- 🔼 *Bar Graph on schools by type*
+- `school_by_type`
+
+![Histogram of funding_per_student_usd](images/school_by_type.png)
+- 🔼 *Histogram of funding per student (in usd)*
+- `funding_per_student_usd`
+
+![Histogram of avg_test_score_percent](images/school_by_level.png)
+- 🔼 *Histogram of average test score percent*
+- `avg_test_score_percent`
+---
