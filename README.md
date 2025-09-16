@@ -27,3 +27,19 @@ Original author: Shamim Hasan
 - 🔼 *Checks if we have any duplicates*
 - `df.duplicated().sum()`
 ---
+
+## A. Data Quality Check
+### Preview (Screenshot)
+
+![School by state](images/school_by_state.png)
+- 🔼 *It gives us info on how many schools are there in states*
+- `school_by_state`
+
+![School by type](images/school_by_type.png)
+- 🔼 *It gives us info on school type*
+- `school_by_type`
+
+![School by level](images/school_by_level.png)
+- 🔼 *It gives us info on level of school*
+- `school_by_level`
+---
