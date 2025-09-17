@@ -83,7 +83,7 @@ for i, value in enumerate(avg_scores_by_type):
 plt.show()
 
 # F. Scatter Plots 
-# Funding vs Test Score
+# Scatter Plots || Funding vs Test Score
 plt.figure(figsize=(7,5))
 sns.regplot(x="funding_per_student_usd", y="avg_test_score_percent", data=df,
             scatter_kws={"alpha":0.6, "color":"blue"}, line_kws={"color":"red"})
@@ -92,11 +92,11 @@ plt.xlabel("Funding per Student (USD)")
 plt.ylabel("Average Test Score (%)")
 plt.show()
 
-# Student-Teacher Ratio vs Test Score
+# Scatter Plots || Student-Teacher Ratio vs Test Score
 plt.figure(figsize=(7,5))
 sns.regplot(x="student_teacher_ratio", y="avg_test_score_percent", data=df,
             scatter_kws={"alpha":0.6, "color":"blue"}, line_kws={"color":"red"})
-plt.title("Student-Teacher Ratio vs Test Score")
+plt.title("Student-Teacher Ratio vs Test Score (with Trend Line)")
 plt.xlabel("Student Teacher Ratio")
 plt.ylabel("Test Score")
 plt.show()
@@ -105,7 +105,7 @@ plt.show()
 plt.figure(figsize=(7,5))
 sns.regplot(x="percent_low_income", y="dropout_rate_percent", data=df,
             scatter_kws={"alpha":0.6, "color":"blue"}, line_kws={"color":"red"})
-plt.title("Percent Low-Income vs Dropout Rate")
+plt.title("Percent Low-Income vs Dropout Rate (with Trend Line)")
 plt.xlabel("percent_low_income")
 plt.ylabel("dropout_rate_percent")
 plt.show()
