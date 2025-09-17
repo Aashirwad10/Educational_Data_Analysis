@@ -107,3 +107,18 @@ Original author: Shamim Hasan
 - 🔼 *Average Test Scores by School Type*
 - `avg_scores_by_type`
 ---
+
+## F. Scatter Plots 
+### Preview (Screenshot)
+![Scatter Plots || Funding vs Test Score](images/fundingvstest.png)
+- 🔼 *Scatter Plots || Funding vs Test Score*
+- `Funding vs Test Scores (with Trend Line)`
+
+![Scatter Plots || Student-Teacher Ratio vs Test Score](images/stuvstest.png)
+- 🔼 *Scatter Plots || Student-Teacher Ratio vs Test Score*
+- `Student-Teacher Ratio vs Test Score (with Trend Line)`
+
+![Scatter Plots || Percent Low-Income vs Dropout Rate](images/incomevsdrop.png)
+- 🔼 *Scatter Plots || Percent Low-Income vs Dropout Rate*
+- `Percent Low-Income vs Dropout Rate (with Trend Line)`
+---
