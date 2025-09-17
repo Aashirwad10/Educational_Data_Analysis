@@ -68,4 +68,36 @@ Original author: Shamim Hasan
 ![Heatmap](images/heatmap.png)
 - 🔼 *Correlation Heatmap of School Factors*
 - `heatmap`
+
+- 🔼 *Reading specific values*  
+  - Funding vs Test Scores → **0.02** → Almost no correlation  
+  - Student–Teacher Ratio vs Dropout Rate → **0.01** → Essentially no relationship  
+  - Percent Low-Income vs Avg Test Score → **-0.00** → No significant link  
+  - Internet Access vs Dropout Rate → **0.02** → Weak, negligible positive relationship  
+  - Most numbers lie between **-0.07 and +0.04**, showing no strong explanatory links  
+
+- 🔼 *Key Insights*  
+  - All correlations are weak (close to 0) → dataset doesn’t show strong linear relationships  
+  - Real-world expectations (but not seen strongly here):  
+    - More funding → better test scores  
+    - Higher low-income % → higher dropout rate  
+    - Better internet access → higher test scores  
+
+- 🔼 *Strongest Positive Correlations*  
+  - Student–Teacher Ratio vs Avg Test Score → **0.04**  
+  - Internet Access vs Student–Teacher Ratio → **0.03**  
+  - Internet Access vs Avg Test Score → **0.02**  
+  - 👉 All negligible  
+
+- 🔼 *Strongest Negative Correlations*  
+  - Student–Teacher Ratio vs Percent Low Income → **-0.07**  
+  - Dropout Rate vs Id → **-0.05**  
+  - Id vs Percent Low Income → **-0.05**  
+  - 👉 Again, very weak  
+
+- 🔼 *Summary*  
+  - All correlations fall within **-0.07 → +0.04**  
+  - In practice → no strong linear relationships  
+  - Heatmap confirms near independence between variables  
+
 ---
