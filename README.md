@@ -58,3 +58,14 @@ Original author: Shamim Hasan
 - 🔼 *Histogram of average test score percent*
 - `avg_test_score_percent`
 ---
+
+## D. Find patterns & correlations
+### Preview (Screenshot)
+![Correlation Summary](images/corr.png)
+- 🔼 *Correlation summary in table format*
+- `corr`
+
+![Heatmap](images/heatmap.png)
+- 🔼 *Correlation Heatmap of School Factors*
+- `heatmap`
+---
