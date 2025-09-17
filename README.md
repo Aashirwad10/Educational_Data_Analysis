@@ -100,3 +100,10 @@ Original author: Shamim Hasan
   - In practice → no strong linear relationships  
   - Heatmap confirms near independence between variables  
 ---
+
+## E. Group Comparisons (categorical vs numeric)
+### Preview (Screenshot)
+![Average Test Scores by School Type](images/avgtestscore.png)
+- 🔼 *Average Test Scores by School Type*
+- `avg_scores_by_type`
+---
