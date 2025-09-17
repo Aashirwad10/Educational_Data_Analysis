@@ -62,12 +62,22 @@ plt.show()
 # Level 2: Intermediate (Exploring Relationships)
 # D. Find patterns & correlations 
 numeric_df = df.select_dtypes(include=['float64', 'int64'])
-
 corr = numeric_df.corr()
 print(corr)
-
 plt.figure(figsize=(10,8))
 sns.heatmap(corr, annot=True, cmap="YlGnBu", fmt=".2f")
-
 plt.title("Correlation Heatmap of School Factors")
+plt.show()
+
+# E. Group Comparisons (categorical vs numeric)
+avg_scores_by_type = df.groupby("school_type")["avg_test_score_percent"].mean()
+print(avg_scores_by_type)
+plt.figure(figsize=(8,5))
+avg_scores_by_type.plot(kind="bar", color="green", edgecolor="black")
+plt.title("Average Test Scores by School Type")
+plt.xlabel("School Type")
+plt.ylabel("Average Test Score (%)")
+plt.xticks(rotation=0)
+for i, value in enumerate(avg_scores_by_type):
+    plt.text(i, value + 0.5, f"{value:.1f}", ha="center", fontsize=9)
 plt.show()
