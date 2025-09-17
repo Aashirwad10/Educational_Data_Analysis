@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 df = pd.read_csv("education_inequality_data.csv")
 
@@ -56,4 +57,17 @@ for i in range(len(counts)):
 plt.title("Histogram of Average test score percent")
 plt.xlabel("Average Test Score (%)")
 plt.ylabel("Number of Schools")
+plt.show()
+
+# Level 2: Intermediate (Exploring Relationships)
+# D. Find patterns & correlations 
+numeric_df = df.select_dtypes(include=['float64', 'int64'])
+
+corr = numeric_df.corr()
+print(corr)
+
+plt.figure(figsize=(10,8))
+sns.heatmap(corr, annot=True, cmap="YlGnBu", fmt=".2f")
+
+plt.title("Correlation Heatmap of School Factors")
 plt.show()
